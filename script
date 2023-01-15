@@ -1,0 +1,193 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib(string.format("Guid By MaxproGlitcher                Discord: MaxproGlitcher#6199", script), "DarkTheme")
+
+local Notification = loadstring(game:HttpGet("https://pastebin.com/raw/byN8L23W"))()
+
+Notification.Notify("Notifications", "Script by MaxproGlitcher", "rbxassetid://11823384169", {
+    Duration = 7,
+    
+    TitleSettings = {
+        TextXAlignment = Enum.TextXAlignment.Center,
+        Font = Enum.Font.SourceSansSemibold,
+    },
+
+    GradientSettings = {
+        GradientEnabled = false,
+        SolidColorEnabled = true,
+        SolidColor = Color3.fromRGB(255, 255, 255),
+        Retract = true
+    }
+})
+
+----------------------------------------------------------------------------------------------------------------------------------------
+   --Mise a jour 1.0
+     local update = Window:NewTab("Mise a jour 1.0")
+     local updateSection = update:NewSection("Mise à jour 1.0 le Script est toujours en développement")
+ 
+     local updateSection = update:NewSection("")
+     
+     local updateSection = update:NewSection("")
+
+     local updateSection = update:NewSection("")
+     
+     local updateSection = update:NewSection("")
+     
+     local updateSection = update:NewSection("")
+     
+     local updateSection = update:NewSection("")
+---------------------------------------------------------------------------------------------------------------------------
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("FLY press F ON-OFF", "FLY Script", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/jrQa6ugm'))()
+end)
+
+ MainSection:NewButton("Noclip press E ON-OFF","Script Noclip", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/0hatvD6X'))()
+ end)
+
+ MainSection:NewButton("Infini Jump","Scritp Inifni jump", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/NpnX4Bk3"))()
+ end)
+
+ MainSection:NewButton("Anti-AFk", "Scritp Anti-AFk", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/2VW2PUmy"))()
+ end)
+
+ MainSection:NewButton("press alt et clik ou tu veux pour suprimer","code pour delet", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/kBT0EJbb'))()
+end)
+
+MainSection:NewButton("Qualiter Graphique","Script Qualiter Graphique", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/hGkcVXZ8'))()
+end) 
+
+MainSection:NewButton("Réinitialiser le personnage","Réinitialiser", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/H71Y2f1J'))()
+end)
+
+MainSection:NewKeybind("Toggle ui", "makes the gui invisible and visible ", Enum.KeyCode.RightAlt, function()
+    Library:ToggleUI()
+end)
+
+----------------------------------------------------------------------------------------------------------------------------
+--teleport
+local teleport = Window:NewTab("teleport")
+local teleportSection = teleport:NewSection("Teleport")
+
+--createButton(tp,teleportation spawn,function() [[loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()]] end)
+local function createButton(ii,was,here,iiwashere) -- put this under the ui library [Guid By MaxproGlitcher                Discord: MaxproGlitcher#6199]
+    ii:NewButton(was,here,iiwashere)
+    end
+
+
+    createButton(teleportSection,'Spawn','Set the CFrame of the player to the specified location',function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-243, 194, 331)
+    end)
+    
+     createButton(teleportSection,'Map','Set the CFrame of the player to the specified location',function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-117.81623840332031, 47.61542892456055, 1.90163421630859381)
+     end)
+---------------------------------------------------------------------------------------------------------------------------
+--Option 
+local Option = Window:NewTab("Option")
+local OptionSection = Option:NewSection("Option")
+ 
+OptionSection:NewButton("Ouvrir la Bousole", "Ouvrir la Bousole code", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/tu9aq8K3"))()
+ end)
+
+ OptionSection:NewButton("Fermer la Bousole", "Fermerla Bousole code", function()
+    loadstring(game:HttpGetAsync("https://pastebin.com/raw/rREhXxXT"))()
+ end)
+
+ local OptionSection = Option:NewSection("Auto chats survival disaster")
+
+ 
+ OptionSection:NewButton("Auto chats survival disaster","Script Auto chats survival disaster", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/nrzrZRNx'))()
+ end)
+
+ local OptionSection = Option:NewSection("Remove domage")
+
+ OptionSection:NewButton("Remove domage","Script Remove domage", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/90LPNz95'))()
+ end)
+---------------------------------------------------------------------------------------------------------------------------
+--Auto Farm
+ local AutoFarm = Window:NewTab("AutoFarm")
+ local AutoFarmSection = AutoFarm:NewSection("AutoFarm")
+
+ local AutoFarmSection = AutoFarm:NewSection("Pour arrecter Auto-Farm vous devez quiter la game")
+
+ AutoFarmSection:NewButton("AutoFarm", "AutoFarm script", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/M2bE9ufq'))()
+end)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+--LOCAL PLAYER
+  local Player = Window:NewTab("Player")
+  local PlayerSection = Player:NewSection("Player")
+
+  PlayerSection:NewSlider("Walkspeed", "SPEED!!", 500, 16, function(s)
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+  end)
+
+  PlayerSection:NewSlider("Jumppower", "JUMP HIGH!!", 350, 50, function(s)
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+  end)
+
+  PlayerSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+      game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+      game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+  end)
+
+  PlayerSection:NewButton("Tape dans le chats /goto et le nom du joueur","code /goto téleportation", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/ERd0gf7i'))()
+end) 
+
+---------------------------------------------------------------------------------------------------------------------------
+     --Servers
+     local Servers = Window:NewTab("Servers")
+     local ServersSection = Servers:NewSection("Servers")
+ 
+ 
+      ServersSection:NewButton("Pour trouver des petit Servers", "Find Small Servers", function()
+         loadstring(game:HttpGet('https://pastebin.com/raw/EQLWt43w'))()
+     end)
+
+        ServersSection:NewButton("Rejoin le même servers", "rejoin", function()
+          loadstring(game:HttpGet('https://pastebin.com/raw/qnpkAepE'))()
+       end)
+---------------------------------------------------------------------------------------------------------------------------
+         -- GuidAnimation
+    local GuidAnimation = Window:NewTab("GuidAnimation")
+    local GuidAnimationSection = GuidAnimation:NewSection("GuidAnimation")
+ 
+    GuidAnimationSection:NewButton("Emote pour ouvrir press la touche , ", "menu Emote", function()
+        loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Gi7331/scripts/main/Emote.lua"))()
+    end)
+---------------------------------------------------------------------------------------------------------------------------
+  --Menu-Admin
+  local MenuAdmin = Window:NewTab("Menu-Admin")
+  local MenuAdminSection = MenuAdmin:NewSection("Menu-Admin")
+
+  MenuAdminSection:NewButton("Infinite-Yield", "FE Admin Commands", function()
+     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+ end)
+
+ MenuAdminSection:NewButton("Cmd-x", "Cmds", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+ end)
+---------------------------------------------------------------------------------------------------------------------------
+  --AutoDeletMap
+  local AutoDeletMap = Window:NewTab("AutoDeletMap")
+  local AutoDeletMapSection = AutoDeletMap:NewSection("AutoDeletMap")
+
+  
+  AutoDeletMapSection:NewButton("Pour suprimer tout la map", "Pour suprimer tout la map code", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/dkgrHEx9'))()
+end)
